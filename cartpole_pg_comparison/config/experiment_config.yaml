@@ -1,0 +1,38 @@
+environment:
+  name: "CartPole-v1"
+  solved_threshold: 475
+  eval_episodes: 100
+
+training:
+  max_steps: 200000
+  seeds: [42, 123, 456, 789, 1024]
+  gamma: 0.99
+  
+reinforce_linear:
+  lr: 0.001
+  entropy_coef: 0.01
+  grad_clip: 1.0
+  
+reinforce_nonlinear:
+  lr: 0.0005
+  hidden_dims: [128, 64]
+  entropy_coef: 0.01
+  grad_clip: 1.0
+
+actor_critic_linear:
+  actor_lr: 0.0005
+  critic_lr: 0.001
+  entropy_coef: 0.01
+  grad_clip: 0.5
+  
+actor_critic_nonlinear:
+  actor_lr: 0.0003
+  critic_lr: 0.001
+  hidden_dims: [128, 64]
+  entropy_coef: 0.01
+  grad_clip: 0.5
+
+logging:
+  eval_frequency: 5000
+  log_frequency: 100
+  save_frequency: 10000

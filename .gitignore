@@ -1,0 +1,104 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# PyDev
+.project
+.pydevproject
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Logs and results
+*.log
+results/
+checkpoints/
+logs/
+figures/
+*.out
+*.tmp
+*.bak
+
+# Config/cached files
+config/*.yaml~
+.DS_Store
+Thumbs.db
+
+# System files
+*.swp
+*~
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Ignore learning artifacts (plots, picks, csv if not source)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.csv
+*.pkl
+
+# Ignore secrets (never add real secrets here, though)
+secrets/
